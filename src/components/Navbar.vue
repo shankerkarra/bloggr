@@ -4,7 +4,7 @@
       <div class="d-flex flex-column align-items-center">
         <img
           alt="logo"
-          src="https://cdn.pixabay.com/photo/2014/08/27/08/11/blogging-428955__480.jpg"
+          src="https://cdn.pixabay.com/photo/2014/08/22/05/58/social-media-423857_1280.jpg"
           height="45"
           width="45"
         />
