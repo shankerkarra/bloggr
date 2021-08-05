@@ -1,7 +1,12 @@
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <h1>{{ bloggr.title }}</h1>
+  <div class="home container">
+    <div class="row">
+      <BloggrThread :bloggrs="bloggrs" />
+    </div>
   </div>
+  <!-- <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+    <h1>{{ bloggr.title }}</h1>
+  </div> -->
 </template>
 
 <script>
