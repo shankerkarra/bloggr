@@ -4,13 +4,13 @@ import { api } from './AxiosService'
 
 class BloggrsService {
   async getAll(query = {}) {
-    const res = await api.get('/api/blog')
+    const res = await api.get('/api/blogs')
     logger.log(res.data)
     AppState.bloggr = res.data
   }
 
   async createBloggrs(bloggr) {
-    const res = await api.post('api/blog')
+    const res = await api.post('api/blogs')
     await this.getAll()
   }
 }
