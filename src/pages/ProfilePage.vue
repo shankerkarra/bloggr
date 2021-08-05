@@ -14,15 +14,15 @@ import { AppState } from '../AppState'
 export default {
   setup() {
     const router = useRouter()
-    onMounted(() => {
-      try{
-        await bloggrsService.getAll({ createrId: router.params.id})
-      }catch(error){
-        pop.toast(error,'error')
+    onMounted(async() => {
+      try {
+        await bloggrsService.getAll({ createrId: router.params.id })
+      } catch (error) {
+        pop.toast(error, 'error')
       }
     })
     return {
- bloggrs: computed (()=> AppState.bloggrs)
+      bloggrs: computed(() => AppState.bloggrs)
     }
   }
 }
