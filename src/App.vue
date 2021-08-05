@@ -7,7 +7,7 @@
   </main>
   <footer>
     <div class="bg-dark text-light text-center p-4">
-      <p>Group Project of 	Enayatullah Shadab  & Shanker Karra </p>
+      <p>Group Project of Enayatullah Shadab  & Shanker Karra </p>
     </div>
   </footer>
 </template>
