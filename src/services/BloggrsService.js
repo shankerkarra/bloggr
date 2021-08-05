@@ -3,7 +3,7 @@ import { logger } from '../utils/Logger'
 import { api } from './AxiosService'
 
 class BloggrsService {
-  async getBloggr(query = {}) {
+  async getAll(query = {}) {
     const res = await api.get('/api/blog')
     logger.log(res.data)
     AppState.bloggr = res.data
