@@ -16,7 +16,7 @@ export default {
     const router = useRoute()
     onMounted(async() => {
       try {
-        await bloggrsService.getAll({ createrId: router.params.id })
+        await bloggrsService.getAll({ creatorId: router.params.id })
       } catch (error) {
         pop.toast(error, 'error')
       }
