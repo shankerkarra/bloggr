@@ -13,7 +13,7 @@ import { AppState } from '../AppState'
 
 export default {
   setup() {
-    const router = useRouter()
+    const router = useRoute()
     onMounted(async() => {
       try {
         await bloggrsService.getAll({ createrId: router.params.id })
