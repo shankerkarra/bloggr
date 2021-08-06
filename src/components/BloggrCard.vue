@@ -28,6 +28,8 @@
 <script>
 import { computed } from '@vue/runtime-core'
 import { AppState } from '../AppState'
+import { bloggrsService } from '../services/BloggrsService'
+
 export default {
   props: {
     bloggr: {
