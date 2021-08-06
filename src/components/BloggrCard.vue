@@ -8,7 +8,6 @@
           Tags: {{ bloggr.tags }}<br>
           Body: {{ bloggr.body }}<br>
           Published: {{ bloggr.published }}<br>
-          ImgUrl: {{ bloggr.imgUrl }}<br>
           CreatorId:{{ bloggr.creatorId }}
         </P>
         <div class="align-self-end" v-if="account.id === bloggr.creatorId">
@@ -31,7 +30,6 @@
 <script>
 import { computed } from '@vue/runtime-core'
 import { AppState } from '../AppState'
-import { bloggrsService } from '../services/BloggrsService'
 
 export default {
   props: {
