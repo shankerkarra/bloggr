@@ -12,17 +12,20 @@
           CreatorId:{{ bloggr.creatorId }}
         </P>
         <div class="align-self-end" v-if="account.id === bloggr.creatorId">
-          <button class="btn btn-danger" @click="destroy">
-            delete
+          <button class="btn btn-danger" @click.stop="">
+            <h1>
+              delete
+            </h1>
           </button>
         </div>
-        <router-link router-link :to="{ name: 'Profile', params: {id: bloggr.creator.id } }" @click="destroy" class="creator p-3 align-self-end">
+        <router-link router-link :to="{ name: 'Profile', params: {id: bloggr.creator.id } }" @click.stop="" class="creator p-3 align-self-end">
           <img class="h-100 rounded-pill" :src="bloggr.creator.picture" alt="Source is crupted (:" srcset="">
           {{ bloggr.creator.name }}
         </router-link>
       </div>
     </div>
   </div>
+  <!-- <BloggrModal :bloggr="bloggr" /> -->
 </template>
 
 <script>
