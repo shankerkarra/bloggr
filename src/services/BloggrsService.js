@@ -6,11 +6,12 @@ class BloggrsService {
   async getAll(query = {}) {
     const res = await api.get('/api/blogs')
     logger.log(res.data)
-    AppState.bloggr = res.data
+    AppState.bloggrs = res.data
   }
 
   async createBloggrs(bloggr) {
     const res = await api.post('api/blogs')
+    logger.log(res.data)
     await this.getAll()
   }
 }

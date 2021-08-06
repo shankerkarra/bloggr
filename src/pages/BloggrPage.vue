@@ -24,7 +24,6 @@ export default {
         Pop.toast(error, 'error')
       }
     })
-
     return {
       bloggrs: computed(() => AppState.bloggrs)
     }
