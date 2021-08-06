@@ -19,12 +19,12 @@
         </div>
         <div class="modal-body bg-dark">
           <div class="container-fluid">
-            <div class="row" v-if="bloggr.image.length">
+            <div class="row">
               <div class="col-6 p-1" v-for="banana in bloggr.image" :key="banana.id">
                 <img class="w-100 h-100 cover shadow-light" :src="banana.imgUrl">
               </div>
             </div>
-            <div class="row" v-else>
+            <div class="row">
               <h4 class="text-grey">
                 No Photos In This bloggr
               </h4>
