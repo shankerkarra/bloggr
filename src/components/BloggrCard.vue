@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  data-toggle="modal" :data-target="'#project-modal-'+project.id"
+  <BloggrModal :bloggr="bloggr" />
 </template>
 
 <script>

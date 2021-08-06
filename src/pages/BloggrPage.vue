@@ -1,7 +1,7 @@
 <template>
   <div class="home container">
     <div class="row">
-      <BloggrThread :bloggrs="bloggrs" />
+      <BloggrThread :bloggrs="bloggrs" />   1
     </div>
   </div>
   <!-- <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">

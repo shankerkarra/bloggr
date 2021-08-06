@@ -7,7 +7,7 @@
 <script>
 import { computed, onMounted } from '@vue/runtime-core'
 import { bloggrsService } from '../services/BloggrsService'
-import pop from '../uilts/Notifier'
+import pop from '../utils/Notifier'
 import { useRoute } from 'vue-router'
 import { AppState } from '../AppState'
 
