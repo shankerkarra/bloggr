@@ -8,7 +8,7 @@
           Tags: {{ bloggr.tags }}<br>
           Body: {{ bloggr.body }}<br>
           Published: {{ bloggr.published }}
-          <!-- -{{ bloggr.creatorId }} -->
+          <!-- {{ bloggr.creatorId }} -->
         </h4>
         <router-link router-link :to="{ name: 'Profile', params: {id: bloggr.creator.id } }" @click.stop="" class="creator p-3 align-self-end">
           <img class="h-100 rounded-pill" :src="bloggr.creator.picture" alt="" srcset="">
