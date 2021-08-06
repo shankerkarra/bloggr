@@ -42,7 +42,6 @@
         >
           Login
         </button>
-
         <div class="dropdown" v-else>
           <div
             class="dropdown-toggle"
