@@ -1,6 +1,6 @@
 <template>
   <div class="col-12">
-    <div class="d-flex mt-2 shadow-light bg-gray border border-light">
+    <div class="d-flex mt-2 shadow-light bg-gray border border-light" data-toggle="modal" :data-target="'#bloggr-modal-'+ bloggr.id">
       <img class="cover-img" :src="bloggr.imgUrl" alt=" Sorry image had problem to be diplayed " srcset="">
       <div class="d-flex flex-grow-1 text-left">
         <P class="py-2 px-3">
@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  <!-- <BloggrModal :bloggr="bloggr" /> -->
+  data-toggle="modal" :data-target="'#project-modal-'+project.id"
 </template>
 
 <script>
